@@ -1,0 +1,6 @@
+[package]
+name = "tarefa_12"
+version = "0.1.0"
+authors = ["Iago Roger <iagoroger1516@gmail.com>"]
+
+[dependencies]

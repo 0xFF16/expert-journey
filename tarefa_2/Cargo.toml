@@ -1,0 +1,6 @@
+[package]
+name = "cel-to-feh"
+version = "0.1.0"
+authors = ["Iago Roger <iagoroger1516@gmail.com>"]
+
+[dependencies]
