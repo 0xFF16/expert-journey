@@ -21,10 +21,14 @@ fn main() -> io::Result<()> {
             let mut buffer = String::new();
             arquivo.read_to_string(&mut buffer)?;
             let p: Pessoa = serde_json::from_str(&buffer)?;
-            p.nome.iter().map(|x| x).filter_map(|x| x);
-            //                .for_each(|x| println!("Nome: {}", x));
-            p.idade.iter().map(|x| x).filter(|x| x);
-            //                 .for_each(|x| println!("Idade: {}", x));
+            p.nome
+                .iter()
+                .map(|x| x)
+                .for_each(|x| println!("Nome: {}", x));
+            p.idade
+                .iter()
+                .map(|x| x)
+                .for_each(|x| println!("Idade: {}", x));
         }
         _ => {
             println!(
