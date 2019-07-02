@@ -1,0 +1,10 @@
+[package]
+name = "afm"
+version = "0.1.0"
+authors = ["Iago Roger <iagoroger1516@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
